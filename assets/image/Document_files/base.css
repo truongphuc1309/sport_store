@@ -1,0 +1,43 @@
+:root{
+    --subject-color: #04AA6D;
+    --secondary-color: #282a35;
+    --text-black: #111;
+    --text-white: #f1f1f1;
+    --top-nav-height: 36px;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+}
+
+.full-height{
+    height: 100%;
+}
+
+
+@keyframes appearIn {
+    from{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes toggleIn {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

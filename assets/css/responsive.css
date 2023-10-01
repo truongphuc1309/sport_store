@@ -1,0 +1,158 @@
+/*================= For table and smart phone ===================*/
+
+@media (max-width: 1023px){
+    .header__nav-top-wrapper {
+        display: none;
+    }
+
+    .header__logo-img{
+        animation: spin linear 4s  infinite;
+    }
+
+    .nav-item-hover:hover{
+        border-bottom: none;
+    }
+    
+    .nav-item-hover:hover .header__toggle-nav{
+        display: none;
+    }
+
+    .header__category {
+        display: none;
+    }
+
+    .header__nav-main-item:last-child:hover .header__toggle-nav-wrapper{
+        transform: translateY(-100%);
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__search--s-m{
+        display: flex;
+    }
+
+    .header__favourite{
+        display: none;
+    }
+
+    .header__user{
+        display: flex;
+    }
+
+    .header__nav-menu{
+        display: flex;
+    }
+
+    .header__category-wrapper--s-m{
+        display: block;
+    }
+
+    #content{
+        padding-top: 100px;
+    }
+
+    .content__category{
+        display: none;
+    }
+
+    .content__category--s-m{
+        display: flex;
+    }
+
+    .content__filter{
+        display: none;
+    }
+
+    .content__filter-wrapper--s-m{
+        display: flex;
+    }
+
+    .content__good:hover{
+        transform: unset;
+    }
+
+    .content__good-img:hover{
+        background-image:url("/assets/image/jordanretro1.jpeg");
+    }
+    
+    .footer__connection{
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        margin-bottom: -14px;
+    }
+
+}
+
+
+/* ==================== For only tablet ============================ */
+
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    .favourite-tag::after{
+        left: -4px;
+    }
+
+    .favourite-tag::before{
+        left: -4px;
+    }
+
+}
+
+
+/* ======================= For only smart phone ======================= */
+
+@media (max-width: 739px)
+{
+    #main{
+        overflow: hidden;
+    }
+    .none-s{
+        display: none;
+    }
+
+    .header__category-wrapper--s-m{
+        width: 100%;
+    }
+
+    #content{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .content__filter--s-m{
+        width: 100%;
+    }
+
+    .favourite-tag::after{
+        left: -2px;
+    }
+
+    .favourite-tag::before{
+        left: -2px;
+        border-width: 2px 3px;
+    }
+    
+    .content__page-number-item{
+        padding: 4px 10px;
+        margin: 0px 12px;
+    }
+
+    .footer-wrapper{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+}
+
+/* =================== Extra ================ */
+
+@media (max-width: 500px) {
+    .content__good-img{
+        height: 256px;
+    } 
+}
+
